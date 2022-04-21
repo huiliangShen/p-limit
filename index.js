@@ -5,6 +5,7 @@ export default function pLimit(concurrency) {
 		throw new TypeError('Expected `concurrency` to be a number from 1 and up');
 	}
 
+	// 循环链表
 	const queue = new Queue();
 	let activeCount = 0;
 
